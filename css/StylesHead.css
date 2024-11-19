@@ -45,7 +45,11 @@ header .nav-link:hover {
     background: linear-gradient(90deg, #00695c, #80cbc4);
     color: #ffffff;
 }
-
+.aspect-ratio {
+    aspect-ratio: 16 / 9; /* Relación 16:9 */
+    object-fit: cover; /* Escalar la imagen manteniendo proporciones */
+    border-radius: 10px; /* Bordes redondeados para un diseño más elegante */
+}
 /* Animación del logo */
 .logo-animation {
     max-height: 80px;
@@ -83,6 +87,82 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Estilo General */
+.text-gold {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.btn-gold {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #c49b30;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del Card */
+.card {
+    border: none;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Carrusel */
+.carousel-inner img {
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.02);
+}
+
+/* Separador Gráfico */
+.separator {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    height: 4px;
+    margin: 2rem auto; /* Centrar el separador */
+    background: linear-gradient(90deg, #FFD700, #FFEB3B); /* Colores iniciales */
+    border-radius: 50px; /* Bordes redondeados */
+    animation: gradientChange 3s infinite alternate; /* Animación infinita */
+}
+
+/* Animación para la Sección */
+#habitaciones {
+    animation: fadeInUp 1s ease-in-out;
+}
+.separator {
+    width: 80%; /* Ancho ajustable */
+    height: 4px;
+    margin: 2rem auto; /* Centrar el separador */
+    background: linear-gradient(90deg, #f57b00, #ffae00, #ffe2ac);
+    background-size: 200% 200%; /* Tamaño del gradiente para animación fluida */
+    border-radius: 50px; /* Bordes redondeados */
+    animation: gradientLoop 5s ease infinite; /* Animación infinita con suavidad */
+}
+
+.separator .line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(to right, #d4af37, transparent);
+}
+
+.separator .text-gold {
+    color: #d4af37;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 /* Pie de página */
 footer {
@@ -91,6 +171,43 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+/* Animación para gradiente suave */
+@keyframes gradientLoop {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn-gold {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .text-gold {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 576px) {
     header .navbar-brand img {
