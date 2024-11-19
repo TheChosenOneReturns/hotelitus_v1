@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #003169, #0074ae, #0080a7, #009f77);
+    background-size: 400% 400%; /* Tamaño del gradiente para la animación */
+    animation: gradientAnimation 15s ease infinite; /* Duración y suavidad */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #008087;
+    animation: fadeIn 1.5s;
+}
+header .navbar-brand img {
+    max-height: 80px;
+    border: 4px solid #00ffee;
+    animation: rotateLogo 12s infinite alternate;
+}
+header .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+header .nav-link:hover {
+    color: #a8e6cf;
+}
+.btn-primary {
+    background-color: #004d40;
+    border-color: #004d40;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #00695c;
+    transform: scale(1.1);
+}
+.section-contact {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s ease;
+}
+.bg-gradient {
+    background: linear-gradient(90deg, #00695c, #80cbc4);
+    color: #ffffff;
+}
+
+/* Animación del logo */
+.logo-animation {
+    max-height: 80px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    animation: logoPulse 1s infinite alternate;
+}
+
+/* Animaciones de elementos del nav */
+.nav-item-hover {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item-hover:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Sombra del header */
+.shadow {
+    box-shadow: 0px 4px 10px rgb(0, 153, 132);
+}
+/* Secciones */
+section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste de imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    background: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+@media (max-width: 576px) {
+    header .navbar-brand img {
+        max-height: 60px;
+    }
+
+    header .nav-link {
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    header .navbar-brand img {
+        max-height: 70px;
+    }
+
+    section {
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes logoPulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+} 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
