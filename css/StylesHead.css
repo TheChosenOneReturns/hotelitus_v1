@@ -172,6 +172,56 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+/* Fondo y diseño de la sección Habitaciones */
+#habitaciones {
+    background: linear-gradient(145deg, #00aaff64, #FFD700); /* Amarillo a dorado */
+    border-radius: 10px; /* Bordes suaves */
+    box-shadow: 0 8px 15px rgba(2, 230, 238, 0.875); /* Sombra para dar profundidad */
+    padding: 1rem; /* Espaciado interno */
+    margin-bottom: 2rem; /* Separación de otras secciones */
+}
+
+/* Títulos dentro de Habitaciones */
+#habitaciones h1, 
+#habitaciones h2 {
+    color: #2a2a2a; /* Texto blanco para contraste */
+    text-shadow: 1px 1px 4px rgb(162, 138, 0); /* Sombra para resaltar el texto */
+    text-align: center;
+}
+
+/* Botón de detalles */
+#habitaciones .btn-gold {
+    background-color: #766500;
+    color: #000000;
+    border: 2px solid #5b5100; /* Borde amarillo para contraste */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#habitaciones .btn-gold:hover {
+    background-color: #FFC107; /* Color más claro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom suave */
+    box-shadow: 0 4px 8px rgba(245, 241, 0, 0.648); /* Sombra al pasar el cursor */
+}
+
+/* Carrusel de imágenes */
+#habitaciones .carousel-inner img {
+    border: 3px solid #007ec7; /* Borde dorado para imágenes */
+    border-radius: 10px; /* Esquinas redondeadas */
+    transition: transform 0.3s ease;
+}
+
+#habitaciones .carousel-inner img:hover {
+    transform: scale(1.02); /* Zoom suave al pasar el cursor */
+}
+
+/* Descripción dinámica */
+#habitaciones #descripcionHabitacion {
+    background: rgba(255, 215, 0, 0.1); /* Fondo amarillo claro translúcido */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
 
 /* Animación para gradiente suave */
 @keyframes gradientLoop {
