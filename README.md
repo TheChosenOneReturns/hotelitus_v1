@@ -114,7 +114,7 @@ El archivo `app.js` es el cerebro de la aplicación.
 * **`firebaseConfig`**: Objeto con las credenciales de Firebase. (Nota: Las credenciales de Firebase, incluida la `apiKey`, son públicas en el código fuente. Se deben asegurar mediante Firebase Rules).
     ```javascript
     const firebaseConfig = {
-      apiKey: "AIzaSyAHTfYQXgWb3l5DqCar3ooOv2yzzsww9Ek", // Ejemplo de clave
+      apiKey: "TU-API"
       authDomain: "bd-fondini-aridos.firebaseapp.com",
       databaseURL: "[https://bd-fondini-aridos-default-rtdb.firebaseio.com](https://bd-fondini-aridos-default-rtdb.firebaseio.com)",
       projectId: "bd-fondini-aridos",
